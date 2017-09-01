@@ -20,7 +20,6 @@ def buzz():
 	#l.append(h['bowling']['score'][0]['overs']+"overs")
 	#l.append(h['bowling']['score'][0]['runs']+"/"+h['bowling']['score'][0]['wickets'])
 
-
 	summary=" ".join(l)
 
 	batting=[]
@@ -48,33 +47,16 @@ def buzz():
 	result.append("\n".join(com_list))
 	return(result)
 
-
-
-
-
-
-
-
-	
 while(True):
 	only=buzz()
 	print(only)
 	client.messages.create(to="+919978762997", from_="+14847274317",body=only[0])
 	client.messages.create(to="+919978762997", from_="+14847274317",body=only[1])
-	client.messages.create(to="+919978762997", from_="+14847274317",body=only[2])
-	
-	
-	
+	client.messages.create(to="+919978762997", from_="+14847274317",body=only[2])	
 	time.sleep(1)	
 
-
-
 # we import the Twilio client from the dependency we just installed
-
-
 # the following line needs your Twilio Account SID and Auth Token
-
-
 # change the "from_" number to your Twilio number and the "to" number
 # to the phone number you signed up for Twilio with, or upgrade your
 # account to send SMS to any phone number
